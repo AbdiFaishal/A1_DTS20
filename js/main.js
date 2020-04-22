@@ -17,11 +17,16 @@ const option = {
 
 const observerFadeIn = new IntersectionObserver((entries, observerFadeIn) => {
   entries.forEach((entry) => {
+    // if (!entry.isIntersecting) {
+    //   return;
+    // } else {
+    //   entry.target.classList.add("animate-top-toggle");
+    //   observerFadeIn.unobserve(entry.target);
+    // }
     if (!entry.isIntersecting) {
       return;
     } else {
-      entry.target.classList.add("animate-top-toggle");
-      observerFadeIn.unobserve(entry.target);
+      entry.target.style.animation = `anim1 .7s ${entry.target.dataset.delay} forwards ease-out`;
     }
   });
 }, option);

@@ -387,20 +387,17 @@ form textarea {
 }
 
 /* Animation on Scroll */
-@keyframes movefromtop {
-  0% {
-    transform: translateY(-10rem);
+@keyframes anim1 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
   }
-  100% {
-    opacity: 1;
+  to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
 .animate {
   opacity: 0;
-}
-
-.animate-top-toggle {
-  animation: movefromtop 0.8s forwards;
 }
