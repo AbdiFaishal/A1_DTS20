@@ -145,11 +145,14 @@
     display: none;
   } */
 
-  header,
+  /* header,
   .topnav {
     background-color: rgb(39, 39, 39);
-  }
+  } */
 
+  .logo {
+    width: 140px;
+  }
   .topnav .nav-right a {
     display: none;
   }
