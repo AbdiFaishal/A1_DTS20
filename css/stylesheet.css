@@ -131,7 +131,7 @@ header {
 
 .logo {
   width: 184px;
-  transform: translateY(5px);
+  transform: translateY(10%);
   /* padding-top: 10px; */
   /* margin-top: 20px; */
 }
@@ -142,7 +142,7 @@ header {
 
 .topnav {
   /* float: right; */
-  background-color: #0d50aa;
+  /* background-color: #0d50aa; */
   overflow: hidden;
 }
 
@@ -159,10 +159,11 @@ header {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 16px;
   text-decoration: none;
   font-size: 17px;
   line-height: 2;
+  transition: background 250ms ease;
 }
 
 .topnav a:hover {
@@ -383,4 +384,23 @@ form textarea {
 .btn-send:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+/* Animation on Scroll */
+@keyframes movefromtop {
+  0% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  opacity: 0;
+}
+
+.animate-top-toggle {
+  animation: movefromtop 0.8s forwards;
 }

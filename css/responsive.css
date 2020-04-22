@@ -140,15 +140,11 @@
   .btn-send {
     padding: 15px 45px;
   }
-  /* 
-  .header-left .logo {
-    display: none;
-  } */
 
-  /* header,
-  .topnav {
-    background-color: rgb(39, 39, 39);
-  } */
+  .nav-left a {
+    /* display: none; */
+    text-align: center;
+  }
 
   .logo {
     width: 140px;
